@@ -25,11 +25,11 @@ public class BooksThymeleafController {
         return "listBooks";
     }
 
-//    @GetMapping("/add")
-//    public String addBookForm(Model model) {
-//        model.addAttribute("book", service.addBook(new Book()));
-//        return "addBook";
-//    }
+    @GetMapping("/add")
+    public String addBookForm(Model model) {
+        model.addAttribute("book", new Book());
+        return "addBook";
+    }
 
     @PostMapping("/add")
     public String addBook(@ModelAttribute Book book) {

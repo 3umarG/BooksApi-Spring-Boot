@@ -13,4 +13,7 @@ public class Book {
     private  double price;
     private  int quantity;
 
+    public Book(){
+
+    }
 }
